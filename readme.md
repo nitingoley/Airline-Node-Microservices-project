@@ -16,4 +16,38 @@ repositories -> this folder contains all the logic using which we interact the D
 
 services -> contains the buiness logic and interacts with repositories for data from the database
 
-utils -> contains helper methods, error classes etc.
+utils -> contains helper methods, error classes etc.  
+
+
+
+
+-Inside the  src/config  folder create file name as 'config.json' and write the following  code:
+
+"""
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+
+"""
+
+-if youre setting up developement enviroment , then write the username of ur db, password of your db in dialect mention 
